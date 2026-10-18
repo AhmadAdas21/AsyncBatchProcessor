@@ -2,7 +2,7 @@
 {
     public class Order
     {
-        private int id { get; set; }
-        
+        public int Id { get; set; }
+        public decimal Amount { get; set; }
     }
 }

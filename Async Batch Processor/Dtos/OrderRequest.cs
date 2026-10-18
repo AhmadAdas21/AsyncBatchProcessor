@@ -1,6 +1,9 @@
 ﻿namespace Async_Batch_Processor.Dtos
 {
-    public class OrderRequest
-    {
-    }
+  
+
+    public record OrderRequestDto(
+        int OrderId,
+        decimal Amount
+    );
 }

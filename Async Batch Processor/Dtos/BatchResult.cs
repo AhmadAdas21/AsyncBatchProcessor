@@ -1,6 +1,8 @@
 ﻿namespace Async_Batch_Processor.Dtos
 {
-    public class BatchResult
-    {
-    }
+    public record BatchResult
+    (
+        IReadOnlyList<OrderResultDto> Successful,
+        IReadOnlyList<OrderResultDto> Failed
+    );
 }
